@@ -26,14 +26,22 @@ function Hero() {
               <label><input type="radio" name="issue" checked={issue === "no"} onChange={() => setIssue("no")} /> No</label>
             </div>
             <div className="form-row3">
-              <div className="field">
+              <div className="input-group">
+                <input
+                  type="text"
+                  required
+                  placeholder=" "
+                />
                 <label>Full Name*</label>
-                <input type="text" placeholder="Ajay Kumar" />
               </div>
 
-              <div className="field">
-                <label>Mobile Number*</label>
-                <input type="tel" placeholder="+91 Mobile number" />
+              <div className="input-group">
+                <input
+                  type="tel"
+                  required
+                  placeholder=" "
+                />
+                <label>+91 Mobile Number*</label>
               </div>
               <button type="submit" className="btn-primary">Book a Free Scan</button>
             </div>

@@ -1,5 +1,6 @@
 import "./DreamBand.css";
 import image3 from "../../assets/images/image 3.png";
+import { BsArrowRight } from "react-icons/bs";
 
 function DreamBand() {
   return (
@@ -50,7 +51,8 @@ function DreamBand() {
           </div>
 
           <div className="learn-more">
-            Learn more →
+            Learn More <span className="arrow-icon"><BsArrowRight /></span>
+           
           </div>
         </div>
       </div>

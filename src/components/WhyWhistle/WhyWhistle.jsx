@@ -1,25 +1,46 @@
 import { useEffect, useState } from "react";
-import "../../index.css";
+import "./WhyWhistle.css";
+import whyData from "../../data/whyData.json";
+
+import why1 from "../../assets/images/why1.png";
+import why2 from "../../assets/images/why2.png";
+import why3 from "../../assets/images/why3.png";
+import why4 from "../../assets/images/why4.png";
+
 function WhyWhistle() {
-  const cards = [
-    { title: "Doctor-led smile", text: "Treatment planned and reviewed by licensed orthodontists.", img: "https://images.unsplash.com/photo-1606811971618-4486d14f3f99?w=600&q=80" },
-    { title: "Pain-free process", text: "Custom aligners that move teeth gently and predictably.", img: "https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=600&q=80" },
-    { title: "Made in best labs", text: "Manufactured in the same labs that supply global brands.", img: "https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=600&q=80" },
-    { title: "Lifestyle friendly", text: "Eat, drink and smile freely — remove them whenever you want.", img: "https://images.unsplash.com/photo-1614859540331-345dccdd6ca0?w=600&q=80" },
-  ];
+  const [cards, setCards] = useState([]);
+
+  useEffect(() => {
+    setCards(whyData);
+  }, []);
+
+  const images = {
+    why1,
+    why2,
+    why3,
+    why4,
+  };
+
   return (
-    <section className="section" style={{ background: "#fff" }}>
+    <section className="why-section">
       <div className="container">
-        <h2 className="section-title">Why Whistle?</h2>
+        <h2 className="why-title">Why Whistle?</h2>
+
         <div className="why-grid">
-          {cards.map((c) => (
-            <article key={c.title} className="why-card">
-              <div className="img"><img src={c.img} alt={c.title} loading="lazy" /></div>
-              <div className="body">
-                <h3>{c.title}</h3>
-                <p>{c.text}</p>
+          {cards.map((card) => (
+            <div className="why-card" key={card.id}>
+              <div className="why-image">
+                <img
+                  src={images[card.image]}
+                  alt={card.title}
+                />
               </div>
-            </article>
+
+              <div className="why-body">
+                <h3>{card.title}</h3>
+                <p>{card.description}</p>
+              </div>
+            </div>
           ))}
         </div>
       </div>
