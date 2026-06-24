@@ -1,29 +1,38 @@
-import { useEffect, useState } from "react";
-
-
 import Header from "./components/Header/Header";
+import Footer from "./components/Footer/Footer";
+
 import Hero from "./components/Hero/Hero";
-// import Marque from "./components/Marque/Marque";
+import CloveBand from "./components/CloveBand/CloveBand";
 import DreamBand from "./components/DreamBand/DreamBand";
 import Results from "./components/Results/Result";
 import WhyWhistle from "./components/WhyWhistle/WhyWhistle";
-import FAQ from "./components/FAQ/FAQ";
-import Footer from "./components/Footer/Footer";
-import CloveBand from "./components/CloveBand/CloveBand";
 
-export default function App() {
+import FAQ from "./components/FAQ/FAQ";
+
+const sections = [
+  Hero,
+  CloveBand,
+  DreamBand,
+  Results,
+  WhyWhistle,
+
+  FAQ,
+];
+
+function App() {
   return (
-    <>
+    <div className="app">
       <Header />
-      
-      <Hero/>
-      {/* <Marque /> */}
-      <CloveBand/>
-      <DreamBand />
-      <Results />
-      <WhyWhistle />
-      <FAQ />
+
+      <main>
+        {sections.map((Section, index) => (
+          <Section key={index} />
+        ))}
+      </main>
+
       <Footer />
-    </>
+    </div>
   );
 }
+
+export default App;

@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react";
 import "../../index.css";
 import image1 from "../../assets/images/image 1.png";
 function Header() {

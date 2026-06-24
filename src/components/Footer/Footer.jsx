@@ -1,5 +1,6 @@
-import { useEffect, useState } from "react";
+import { FaFacebook, FaInstagram } from "react-icons/fa";
 import "./Footer.css";
+import { FaXTwitter } from "react-icons/fa6";
 function Footer() {
   return (
   <footer className="footer">
@@ -32,7 +33,7 @@ function Footer() {
       <div className="footer-social">
         <h4 className="footer-heading">Follow us on</h4>
         <div className="footer-social-icons">
-          Instagram Facebook X
+           <FaInstagram /> <FaFacebook /> <FaXTwitter />
         </div>
       </div>
 
