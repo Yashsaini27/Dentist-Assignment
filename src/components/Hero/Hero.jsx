@@ -1,3 +1,4 @@
+import { useState } from "react";
 import "./Hero.css";
 import heroimg from "../../assets/images/heroimg.png";
 
