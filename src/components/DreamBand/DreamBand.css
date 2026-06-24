@@ -79,18 +79,27 @@
 .bullets {
   list-style: none;
   margin-top: 24px;
+  padding: 0;
 }
 
 .bullets li {
-  position: relative;
-  padding-left: 22px;
-  margin-bottom: 12px;
-  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 14px;
+  font-size: 16px;
   color: #555;
 }
 
+.bullets li svg {
+  flex-shrink: 0;
+  color: #61c18c; /* dark gray like design */
+  font-size: 24px;
+}
+
+
 .bullets li::before {
-  content: "✓";
+ 
   position: absolute;
   left: 0;
   color: #61c18c;
@@ -116,6 +125,7 @@
   .band-inner {
     grid-template-columns: 1fr;
     gap: 24px;
+    text-align: left;
   }
 
   .band h2 {
@@ -148,7 +158,7 @@
   }
 
   .new-price span {
-    font-size: 22px;
+    font-size: 15px;
   }
 
   .product-image img {

@@ -254,7 +254,7 @@
 
   .hero-inner {
     grid-template-columns: 1.3fr 0.7fr;
-    padding: 4px;
+    padding: 0px;
   }
 
   .hero-copy h1 {

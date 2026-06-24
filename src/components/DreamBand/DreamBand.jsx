@@ -1,6 +1,7 @@
 import "./DreamBand.css";
 import image3 from "../../assets/images/image 3.png";
 import { BsArrowRight } from "react-icons/bs";
+import { IoCheckmarkCircle } from "react-icons/io5";
 
 function DreamBand() {
   return (
@@ -40,8 +41,8 @@ function DreamBand() {
               </div>
 
               <ul className="bullets">
-                <li>Offer valid for a limited time</li>
-                <li>Easy financing options</li>
+                <li><IoCheckmarkCircle size={22}/>Offer valid for a limited time</li>
+                <li><IoCheckmarkCircle size={22}/>Easy financing options</li>
               </ul>
             </div>
 
