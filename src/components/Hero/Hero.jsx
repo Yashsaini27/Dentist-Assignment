@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./Hero.css";
 import heroimg from "../../assets/images/heroimg.png";
 
@@ -27,22 +27,22 @@ function Hero() {
             </div>
             <div className="form-row3">
               <div className="input-group">
-                <input
-                  type="text"
-                  required
-                  placeholder=" "
-                />
-                <label>Full Name*</label>
-              </div>
+  <input
+    type="text"
+    required
+    placeholder=" "
+  />
+  <label>Full Name*</label>
+</div>
 
-              <div className="input-group">
-                <input
-                  type="tel"
-                  required
-                  placeholder=" "
-                />
-                <label>+91 Mobile Number*</label>
-              </div>
+            <div className="input-group">
+  <input
+    type="tel"
+    required
+    placeholder=" "
+  />
+  <label>+91 Mobile Number*</label>
+</div>
               <button type="submit" className="btn-primary">Book a Free Scan</button>
             </div>
             <label className="consent">
