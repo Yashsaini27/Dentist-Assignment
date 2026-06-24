@@ -1,0 +1,105 @@
+/* ==========================
+   CLOVE SECTION
+========================== */
+
+.clove-band {
+  padding: 40px 0;
+  background: #ffffff;
+}
+
+.clove-card {
+  background: #eef7ff;
+  border-radius: 20px;
+  padding: 24px 40px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+
+.clove-content {
+  flex: 1;
+}
+
+.clove-content h4 {
+  font-size: 27px;
+  line-height: 1.2;
+  font-weight: 700;
+  color: #222;
+  max-width: 850px;
+}
+
+.clove-side {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+}
+
+.clove-logo {
+  width: 140px;
+  height: auto;
+}
+
+.find-clinic-btn {
+  background: transparent;
+  border: none;
+  color: #8b5cf6;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.find-clinic-btn span {
+  font-size: 14px;
+}
+
+/* ==========================
+   TABLET
+========================== */
+
+@media (max-width: 992px) {
+
+  .clove-card {
+    padding: 24px;
+  }
+
+  .clove-content h2 {
+    font-size: 28px;
+  }
+
+  .clove-logo {
+    width: 120px;
+  }
+}
+
+/* ==========================
+   MOBILE
+========================== */
+
+@media (max-width: 768px) {
+
+  .clove-card {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .clove-content h2 {
+    font-size: 20px;
+    line-height: 1.5;
+  }
+
+  .clove-logo {
+    width: 110px;
+  }
+
+  .find-clinic-btn {
+    font-size: 15px;
+  }
+}

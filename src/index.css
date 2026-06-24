@@ -43,77 +43,7 @@ a { color: inherit; text-decoration: none; }
 .logo { display: inline-flex; align-items: baseline; gap: 6px; }
 .logo-sub { font-size: 9px; letter-spacing: .18em; font-weight: 700; color: var(--ink-2); margin-left: 2px; }
 
-/* Promo strip */
-.promo-strip { background: #1a1a1a; color: #fff; font-size: 12px; text-align: center; padding: 7px 0; }
-.promo-strip s { color: #888; margin-right: 6px; }
-.promo-strip strong { color: #fff; font-weight: 700; }
 
-
-
-/* Lead form */
-.lead-form-section { background: #fff; padding: 32px 0 28px; }
-.lead-form { max-width: 760px; margin: 0 auto; display: grid; gap: 14px; }
-.form-q { text-align: center; font-weight: 700; font-size: 15px; }
-.radio-row { display: flex; gap: 28px; align-items: center; }
-.radio-row.center { justify-content: center; }
-.radio-row label { display: inline-flex; gap: 6px; align-items: center; font-size: 14px; color: var(--ink-2); cursor: pointer; }
-.form-row3 { display: grid; grid-template-columns: 1fr 1fr auto; gap: 10px; align-items: end; }
-.field { display: flex; flex-direction: column; gap: 4px; }
-.field label { font-size: 11px; color: var(--muted); font-weight: 600; }
-.field input, .field select { padding: 11px 12px; border: 1px solid var(--border); border-radius: 8px; background: #fff; font-size: 14px; transition: border-color .15s, box-shadow .15s; }
-.field input:focus, .field select:focus { outline: none; border-color: var(--purple); box-shadow: 0 0 0 3px var(--purple-light); }
-.btn-primary { background: #b9a4e8; color: #1a1a1a; padding: 12px 22px; border-radius: 8px; font-weight: 700; font-size: 14px; transition: background .2s, transform .1s; white-space: nowrap; }
-.btn-primary:hover { background: var(--purple); color: #fff; }
-.btn-primary:active { transform: translateY(1px); }
-
-/* Clove band */
-.clove-band { padding: 28px 0; }
-.clove-inner { display: flex; justify-content: space-between; align-items: center; gap: 20px; background: #f5f7ff; border-radius: var(--radius); padding: 22px 26px; }
-.clove-text p { font-size: 16px; color: var(--ink); line-height: 1.5; max-width: 540px; }
-.clove-side { display: flex; flex-direction: column; align-items: flex-end; gap: 10px; }
-.clove-logo { background: #4a2a14; color: #fff; padding: 8px 14px; border-radius: 8px; font-weight: 800; font-size: 16px; display: inline-flex; flex-direction: column; line-height: 1; }
-.clove-logo span { color: #f4a261; }
-.clove-logo small { font-size: 9px; letter-spacing: .2em; margin-top: 3px; }
-.find-clinic { color: var(--purple); font-size: 13px; font-weight: 600; }
-
-/* Consent checkbox */
-.consent { display: flex; gap: 8px; align-items: flex-start; font-size: 11px; color: var(--muted); line-height: 1.4; }
-.consent input { margin-top: 2px; }
-
-
-
-
-/* Results */
-/* Results — before/after cards */
-.results-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
-.result-card { border-radius: 12px; overflow: hidden; background: #fff; border: 1px solid var(--border); transition: transform .25s, box-shadow .25s; padding: 10px; }
-.result-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); }
-.ba-row { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; }
-.ba-cell { display: flex; flex-direction: column; gap: 4px; }
-.result-card .photo { aspect-ratio: 1/1; background: #f1f5f9; overflow: hidden; border-radius: 8px; }
-.result-card .photo img { width: 100%; height: 100%; object-fit: cover; }
-.ba-tag { text-align: center; font-size: 11px; color: var(--muted); font-weight: 600; letter-spacing: .04em; }
-.concern-row { display: flex; justify-content: space-between; margin-top: 10px; padding: 8px 4px 2px; border-top: 1px solid var(--border); font-size: 13px; }
-.concern-label { color: var(--muted); }
-.concern-value { font-weight: 700; color: var(--ink); }
-
-.skeleton { background: linear-gradient(90deg, #f1f5f9 0%, #e2e8f0 50%, #f1f5f9 100%); background-size: 200% 100%; animation: shimmer 1.2s infinite; }
-@keyframes shimmer { from { background-position: 200% 0;} to { background-position: -200% 0;} }
-.skeleton-card { border-radius: 12px; overflow: hidden; border: 1px solid var(--border); }
-.skeleton-card .photo { aspect-ratio: 1/1; }
-.skeleton-card .line { height: 10px; margin: 10px 12px; border-radius: 4px; }
-.error-box { padding: 20px; text-align: center; color: var(--red); background: #fef2f2; border: 1px solid #fecaca; border-radius: var(--radius); }
-.retry-btn { margin-top: 10px; padding: 8px 14px; border-radius: 8px; background: var(--purple); color: #fff; font-weight: 600; }
-
-/* Why Whistle */
-.why-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; }
-.why-card { background: #fff; border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; transition: transform .25s, box-shadow .25s; }
-.why-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); }
-.why-card .img { aspect-ratio: 4/3; background: #f1f5f9; }
-.why-card .img img { width: 100%; height: 100%; object-fit: cover; }
-.why-card .body { padding: 16px; }
-.why-card h3 { font-size: 15px; font-weight: 700; margin-bottom: 6px; }
-.why-card p { font-size: 13px; color: var(--muted); line-height: 1.5; }
 
 /* FAQ */
 .faq-band { background: var(--purple-soft); }
@@ -199,94 +129,15 @@ a { color: inherit; text-decoration: none; }
 
   /* Hero */
 
-  .hero {
-    padding: 32px 0;
-  }
+  
 
-  .hero-inner {
-    grid-template-columns: 1fr;
-    text-align: center;
-    gap: 20px;
-  }
+ 
 
-  .hero h1 {
-    font-size: 30px;
-    line-height: 1.2;
-  }
-
-  .hero p {
-    font-size: 14px;
-  }
-
-  .hero-img {
-    max-width: 220px;
-    margin: 0 auto;
-  }
-
-  /* Form */
-
-  .lead-form {
-    gap: 16px;
-  }
-
-  .radio-row {
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-
-  .form-row3 {
-    grid-template-columns: 1fr;
-    gap: 12px;
-  }
-
-  .btn-primary {
-    width: 100%;
-  }
-
-  /* Clove */
-
-  .clove-inner {
-    flex-direction: column;
-    text-align: center;
-    padding: 20px;
-  }
-
-  .clove-side {
-    align-items: center;
-  }
-
-  .clove-text p {
-    max-width: 100%;
-  }
-
-  /* Dream Smile */
-
-  .band-inner {
-    grid-template-columns: 1fr;
-    text-align: center;
-  }
-
-  .band h2 {
-    font-size: 28px;
-  }
-
-  .product-card {
-    text-align: left;
-  }
+ 
 
   /* Results */
 
-  .results-grid {
-    grid-template-columns: 1fr;
-    gap: 16px;
-  }
-
-  /* Why Whistle */
-
-  .why-grid {
-    grid-template-columns: 1fr;
-  }
-
+  
   /* FAQ */
 
   .faq-title {
@@ -302,24 +153,10 @@ a { color: inherit; text-decoration: none; }
     padding: 0 16px 14px;
   }
 
-  /* Footer */
-
-  .footer-grid {
-    grid-template-columns: 1fr;
-    text-align: center;
-    gap: 24px;
-  }
-}
+  
 
 @media (max-width: 480px) {
 
-  .hero h1 {
-    font-size: 26px;
-  }
-
-  .band h2 {
-    font-size: 24px;
-  }
 
   .section-title {
     font-size: 24px;
@@ -329,9 +166,7 @@ a { color: inherit; text-decoration: none; }
     padding: 0 14px;
   }
 
-  .clove-inner {
-    padding: 16px;
-  }
+ 
 
   .product-card {
     padding: 16px;
@@ -340,4 +175,5 @@ a { color: inherit; text-decoration: none; }
   .result-card {
     padding: 8px;
   }
+}
 }
