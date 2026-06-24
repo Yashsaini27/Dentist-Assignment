@@ -1,0 +1,171 @@
+/* Section */
+
+.band {
+  background: #edf3f8;
+  padding: 80px 0;
+}
+
+.band-inner {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.band h2 {
+  font-size: 54px;
+  line-height: 1.1;
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: #222;
+}
+
+.band p {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #444;
+  margin-bottom: 18px;
+}
+
+/* Product Card */
+
+.product-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 28px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.06);
+}
+
+.product-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.product-info h3 {
+  font-size: 30px;
+  margin-bottom: 25px;
+  color: #333;
+}
+
+.old-price {
+  color: #888;
+  text-decoration: line-through;
+  font-size: 16px;
+}
+
+.new-price {
+  margin-top: 10px;
+  font-size: 19px;
+  color: #555;
+}
+
+.new-price span {
+  color: #8b5cf6;
+  font-size: 19px;
+  font-weight: 600;
+}
+
+.tax-text {
+  font-size: 12px;
+  color: #888;
+  margin-top: 4px;
+}
+
+.product-image img {
+  width: 140px;
+}
+
+.bullets {
+  list-style: none;
+  margin-top: 24px;
+}
+
+.bullets li {
+  position: relative;
+  padding-left: 22px;
+  margin-bottom: 12px;
+  font-size: 14px;
+  color: #555;
+}
+
+.bullets li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #61c18c;
+  font-weight: bold;
+}
+
+.learn-more {
+  text-align: right;
+  margin-top: 20px;
+  color: #8b5cf6;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+  .band {
+    padding: 40px 12px;
+  }
+
+  .band-inner {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .band h2 {
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 16px;
+  }
+
+  .band p {
+    font-size: 12px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+  }
+
+  .product-card {
+    padding: 16px;
+  }
+
+  .product-info h3 {
+    font-size: 22px;
+    margin-bottom: 12px;
+  }
+
+  .old-price {
+    font-size: 12px;
+  }
+
+  .new-price {
+    font-size: 13px;
+  }
+
+  .new-price span {
+    font-size: 22px;
+  }
+
+  .product-image img {
+    width: 90px;
+  }
+
+  .bullets {
+    margin-top: 14px;
+  }
+
+  .bullets li {
+    font-size: 11px;
+    margin-bottom: 8px;
+  }
+
+  .learn-more {
+    font-size: 12px;
+    margin-top: 10px;
+  }
+}

@@ -5,6 +5,7 @@
 .hero {
   background: #f4eff8;
   overflow: hidden;
+  padding: 0px;
 }
 
 .hero-inner {
@@ -220,7 +221,7 @@
 
   .hero-inner {
     grid-template-columns: 1.3fr 0.7fr;
-    padding: 10px;
+    padding: 4px;
   }
 
   .hero-copy h1 {
